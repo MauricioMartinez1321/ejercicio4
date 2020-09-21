@@ -48,5 +48,21 @@ void jugador(){
         system("cls");
 
         }
+        
+        for(i=0;i<5;i++){
+
+        printf("\n\t---Tus personajes guardados fueron: \n");
+
+        printf("\nNombre: %s", usuario[i].nombre);
+
+        printf("\nTipo/Raza: %s", usuario[i].tipo);
+
+        printf("\nCantidad de fuerza: %d", usuario[i].fuerza);
+
+        printf("\nCantidad de salud: %d", usuario[i].salud);
+
+        printf("\n\n------------------------------------------------------\n");
+      }
+        getch();
 
 }
