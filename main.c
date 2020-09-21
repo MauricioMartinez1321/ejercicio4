@@ -25,8 +25,28 @@ typedef struct personaje{char nombre[MAX];
 }
 
 void jugador(){
+        int i=0;
 
+        personaje usuario[4];
 
+        for(i=0;i<5;i++){
 
+                    printf("\n\n\t--------captura de datos de personajes------\n\n\n");
+
+        printf("\nNombre del personaje\n");
+        scanf("%s",&usuario[i].nombre);
+
+        printf("\nTipo/Raza del personaje\n");
+        scanf("%s",&usuario[i].tipo);
+
+        printf("\nCantidad de fuerza del personaje   MAX 100pts\n");
+        scanf("%d",&usuario[i].fuerza);
+
+        printf("\nCantidad de salud del personaje    MAX 100pts\n");
+        scanf("%d",&usuario[i].salud);
+
+        system("cls");
+
+        }
 
 }
